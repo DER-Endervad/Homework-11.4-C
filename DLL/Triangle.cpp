@@ -1,6 +1,6 @@
 #include "Triangle.h"
 
-Triangle::Triangle(int l_a, int l_b, int l_c, int a_a, int a_b, int a_c) {
+DLL_API Triangle::Triangle(int l_a, int l_b, int l_c, int a_a, int a_b, int a_c) {
 	if ((a_a + a_b + a_c) == 180) {
 		sides_count = 3;
 		name = "Треугольник";
@@ -16,7 +16,7 @@ Triangle::Triangle(int l_a, int l_b, int l_c, int a_a, int a_b, int a_c) {
 	}
 }
 
-Triangle::Triangle(int l_a, int l_b, int l_c, int a_a, int a_b, int a_c, std::string name) {
+DLL_API Triangle::Triangle(int l_a, int l_b, int l_c, int a_a, int a_b, int a_c, std::string name) {
 	if ((a_a + a_b + a_c) == 180) {
 		sides_count = 3;
 		this->name = name;
@@ -32,7 +32,7 @@ Triangle::Triangle(int l_a, int l_b, int l_c, int a_a, int a_b, int a_c, std::st
 	}
 }
 
-void Triangle::get_sides_count() {
+DLL_API void Triangle::get_sides_count() {
 	Figure::get_sides_count();
 	std::cout << "Стороны: a=" << length_a << " b=" << length_b << " c=" << length_c << std::endl;
 	std::cout << "Углы: A=" << angel_a << " B=" << angel_b << " C=" << angel_c << std::endl;

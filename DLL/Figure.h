@@ -1,5 +1,10 @@
 #pragma once
 #include <iostream>
+#ifdef DLL_EXPORTS
+#define DLL_API __declspec(dllexport)
+#else
+#define DLL_API __declspec(dllimport)
+#endif
 class Figure
 {
 protected:
@@ -7,8 +12,8 @@ protected:
 	std::string name;
 	
 public:
-	Figure();
+	DLL_API Figure();
 
-	virtual void get_sides_count();
+	DLL_API virtual void get_sides_count();
 };
 

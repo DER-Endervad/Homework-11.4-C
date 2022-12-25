@@ -14,10 +14,10 @@ protected:
 	int angel_d;
 
 public:
-	Quadrangle(int l_a, int l_b, int l_c, int l_d, int a_a, int a_b, int a_c, int a_d);
+	DLL_API Quadrangle(int l_a, int l_b, int l_c, int l_d, int a_a, int a_b, int a_c, int a_d);
 
-	Quadrangle(int l_a, int l_b, int l_c, int l_d, int a_a, int a_b, int a_c, int a_d, std::string name);
+	DLL_API Quadrangle(int l_a, int l_b, int l_c, int l_d, int a_a, int a_b, int a_c, int a_d, std::string name);
 
-	void get_sides_count() override;
+	DLL_API void get_sides_count() override;
 };
 

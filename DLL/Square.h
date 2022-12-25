@@ -3,6 +3,6 @@
 class Square : public Quadrangle
 {
 public:
-	Square(int l_a, int a_a = 90, std::string name = " вадрат");
+	DLL_API Square(int l_a, int a_a = 90, std::string name = " вадрат");
 };
 

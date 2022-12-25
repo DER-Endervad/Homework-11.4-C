@@ -13,10 +13,10 @@ protected:
 	int angel_c;
 
 public:
-	Triangle(int l_a, int l_b, int l_c, int a_a, int a_b, int a_c);
+	DLL_API Triangle(int l_a, int l_b, int l_c, int a_a, int a_b, int a_c);
 
-	Triangle(int l_a, int l_b, int l_c, int a_a, int a_b, int a_c, std::string name);
+	DLL_API Triangle(int l_a, int l_b, int l_c, int a_a, int a_b, int a_c, std::string name);
 
-	void get_sides_count() override;
+	DLL_API void get_sides_count() override;
 };
 
